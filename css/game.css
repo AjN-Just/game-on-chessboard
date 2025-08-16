@@ -1,0 +1,37 @@
+:root{
+    --width : 150px;
+    --height : 50px;
+    --border : 3px;
+    --margin : 10px;
+    --font : 17px
+}
+.play, #cancel{
+    width: var(--width); height: var(--height);
+    background-color: green;
+    border: var(--border) solid black;
+    border-radius: var(--margin);
+    margin: var(--margin) auto;
+    font-size: var(--font);
+    font-weight: bolder;
+}
+#cancel{
+    background-color: red;
+    float: right;
+    margin-right: var(--font);
+}
+.start{
+    width: 200px; height: 150px;
+    margin: var(--height) auto;
+    padding: var(--font);
+    justify-content: center;
+    align-content: center;
+}
+@media (max-width : 550px){
+    :root{
+        --width : 75px;
+        --height : 30px;
+        --border : 2px;
+        --margin : 5px;
+        --font : 9px
+    }
+}

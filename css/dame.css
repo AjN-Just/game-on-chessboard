@@ -1,0 +1,25 @@
+span{
+    display: inline-block;
+    width: 50%; height: 50%;
+    margin: 25%;
+    border-radius: 50%;
+}
+.bp{
+    background-color: black;
+}
+.wp{
+    background: white;
+}
+.no{
+    display: none;
+}
+.wd{
+    background-color: rgb(230, 243, 210);
+    border-radius: 10%;
+    border-bottom-right-radius: 100%;
+}
+.bd{
+    border-radius: 10%;
+    border-bottom-right-radius: 100%;
+    background-color: rgb(4, 4, 71);
+}

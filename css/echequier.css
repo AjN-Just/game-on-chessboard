@@ -1,0 +1,50 @@
+:root{
+    --all : 520px;
+    --ech : 480px;
+    --num : 30px;
+    --font-size : 15px;
+    --border : 5px;
+}
+#game{
+    margin: 20px auto;
+    width: var(--all); height: var(--all);
+    background-color: black;
+}
+.div{
+    display: flex; flex-direction: row;
+    width: 100%; height: 12.5%;
+}
+#ech{
+    width: var(--ech); height: var(--ech);
+    border: var(--border) solid black;
+    display: flex; flex-direction: column;
+}
+button, nav{
+    width: 12.5%; height: 100%;
+    border: 0px;
+}
+.let{
+    display: flex; width: var(--ech); 
+    height: var(--num); flex-direction: row;
+    margin: 0px var(--num);
+}
+.nu{
+    width: var(--num); height: var(--ech);
+    flex-direction: column; float: left;
+    margin: 0px; display: flex;
+}
+nav{
+    color: white; font-size: var(--font-size);
+    font-weight: bold; text-align: center;
+    align-self: center;
+}
+
+@media (max-width: 550px){
+    :root{
+        --all : 95vw;
+        --ech : 88vw;
+        --num : 5vw;
+        --font-size : 2vw;
+        --border : 0.5vw;
+    }
+}

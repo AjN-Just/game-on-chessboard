@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECHEQUIER</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/echequier.css">
+</head>
+<body>
+    <div class="start" id="start">
+        <a href="dame.html"><button id="dame" class="play">START DAME</button></a>
+        <button id="chess" class="play">START CHESS</button>
+    </div>
+
+    <script>
+        var  ch=document.getElementById('chess');
+        ch.addEventListener('click', function(e){
+            alert('Comming Son !!!');
+            e.preventDefault;
+        }, false);
+    </script>
+    <script src="js/echequier.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
