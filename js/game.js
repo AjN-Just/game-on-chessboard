@@ -43,11 +43,11 @@ function getIdn(e){
 /*FONCTION POUR VERIFIER LA FIN DU JEU */
 function endVerify(col){
     var per, nper=0;
-    col[0]=='w' ? per='b' : per='w';
+    col[0]=='w' ? per='black' : per='white';
     for(var i in idd){
         if(cas[i].style.backgroundColor!='bisque'){
             var ca=cas[i].lastElementChild.className;
-            if(ca[0]==per){
+            if(ca[0]==per[0]){
                 nper++ ;
                 break;
             }
